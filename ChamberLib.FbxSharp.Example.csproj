@@ -68,5 +68,6 @@
     <None Include="OpenTK.dll.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="screenshot.png" />
   </ItemGroup>
 </Project>
