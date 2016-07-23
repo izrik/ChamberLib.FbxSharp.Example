@@ -11,13 +11,13 @@ namespace ChamberLib.FbxSharp.Example
             var glsl = new GlslShaderImporter();
             importer =
                 new BuiltinContentImporter(                     // resolve builtin resources
-                        new ContentImporter(
-                            new FbxModelImporter().ImportModel,         // model importer
-                            new BasicTextureImporter().ImportTexture,   // texture importer
-                            glsl.ImportShaderStage,                     // shader importer
-                            null,                                       // font importer
-                            null,                                       // song importer
-                        null));                                    // sound effect importer
+                    new ContentImporter(
+                        new FbxModelImporter().ImportModel,         // model importer
+                        new BasicTextureImporter().ImportTexture,   // texture importer
+                        new GlslShaderImporter().ImportShaderStage, // shader importer
+                        null,                                       // font importer
+                        null,                                       // song importer
+                        null));                                     // sound effect importer
 
 
             subsystem = new OpenTKSubsystem(
